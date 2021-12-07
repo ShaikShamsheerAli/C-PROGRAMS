@@ -3,12 +3,12 @@ int main()
 {
 	int a;
 	scanf("%d",&a);
-	if(a==365||a<365)
+	if(a%4==0&&a%100!=0||a%400==0)
 	{
-		printf("a is not leap year");
+		printf("a is leap year");
 	}
 	else
 	{
-		printf("a is a leap year");
+		printf("a is not a leap year");
 	}
 }
